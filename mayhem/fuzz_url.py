@@ -4,9 +4,8 @@ import random
 import atheris
 import sys
 import fuzz_helpers
-import random
 
-with atheris.instrument_imports():
+with atheris.instrument_imports(include=['furl']):
     from furl import furl
 
 def TestOneInput(data):
